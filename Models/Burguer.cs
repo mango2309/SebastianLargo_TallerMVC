@@ -13,5 +13,7 @@ namespace SebastianLargo_TallerMVC.Models
         [Range(0.01, 9999.99)]
         public decimal Precio { get; set; }
 
+        public int Salad1 { get; set; }
+        public int Salad12{ get; set; }
     }
 }
