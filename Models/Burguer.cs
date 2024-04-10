@@ -14,6 +14,6 @@ namespace SebastianLargo_TallerMVC.Models
         public decimal Precio { get; set; }
 
         public int Salad1 { get; set; }
-        public int Salad12{ get; set; }
+        public int Salad12 { get; set; }
     }
 }

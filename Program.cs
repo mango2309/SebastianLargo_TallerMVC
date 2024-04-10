@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using SebastianLargo_TallerMVC.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<SebastianLargo_TallerMVCContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SebastianLargo_TallerMVCContext") ?? throw new InvalidOperationException("Connection string 'SebastianLargo_TallerMVCContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
